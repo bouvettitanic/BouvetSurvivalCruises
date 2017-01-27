@@ -1,0 +1,105 @@
+﻿<html>
+
+<head>
+    <title>Buy extras</title>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="titanic.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+    <div id="wrapper">
+        <section id="menu">
+            <ul>
+                <li>Experiences</li>
+                <li>Book ticket</li>
+            </ul>
+        </section>
+        <section id="main">
+            <form id="bestill">
+                <div class="row">
+                    <label class="box2" for="swimminglessons">Swimming lessons</label>
+                    <input type="checkbox" name="swimminglessons" value="SwimmingLessions">
+                    <label class="box" for="swimminglessons">+5%</label>
+                    <label class="box" for="swimminglessons">500 kr</label><br>
+                </div>
+                <div class="row">
+                    <label class="box2" for="privatelifeboat">Private lifeboat</label>
+                    <input type="checkbox" name="privatelifeboat" value="privatelifeboat">
+                    <label class="box" for="privatelifeboat">+80%</label>
+                    <label class="box" for="privatelifeboat">2000 kr</label><br>
+                </div>
+                <div class="row">
+                    <label class="box2" for="wetsuit">Wetsuit</label>
+                    <input type="checkbox" name="wetsuit" value="privatelifeboat"><br>
+                    <label class="box" for="wetsuit">+15%</label>
+                    <label class="box" for="wetsuit">250 kr</label>
+                </div>
+
+                <div class="row">
+                    <label class="box2" for="scubagear">Scubagear</label>
+                    <input type="checkbox" name="scubagear" value="privatelifeboat"><br>
+                    <label class="box" for="scubagear">+15%</label>
+                    <label class="box" for="scubagear">800 kr</label>
+                </div>
+
+                <div class="row">
+                    <label class="box2" for="survivalsuit">Survival suit</label>
+                    <input type="checkbox" name="survivalsuit" value="survivalsuit"><br>
+                    <label class="box" for="survivalsuit">+15%</label>
+                    <label class="box" for="survivalsuit">500 kr</label>
+                </div>
+                <div class="row">
+                    <label class="box2" for="armfloats">Arm floats</label>
+                    <input type="checkbox" name="armfloats" value="armfloats"><br>
+                    <label class="box" for="armfloats">+10%</label>
+                    <label class="box" for="armfloats">50 kr</label>
+                </div>
+                <div class="row">
+                    <label class="box2" for="lifebouv">Lifebouv</label>
+                    <input type="checkbox" name="lifebouv" value="armfloats"><br>
+                    <label class="box" for="lifebouv">+5%</label>
+                    <label class="box" for="lifebouv">150 kr</label>
+                </div>
+                <div class="row">
+                    <label class="box2" for="pregnant">Pregnant disguise</label>
+                    <input type="checkbox" name="pregnant" value="armfloats"><br>
+                    <label class="box" for="pregnant">+15%</label>
+                    <label class="box" for="pregnant">500 kr</label>
+                </div>
+                <div class="row">
+                    <label class="box2" for="sexchange">Sex change kit</label>
+                    <input type="checkbox" name="sexchange" value="armfloats"><br>
+                    <label class="box3" for="sexchange">+55%</label>
+                    <label class="box3" for="sexchange">5000 kr</label>
+                </div>
+                <div class="row">
+                    <label class="box2" for="wig">Wig / disguise</label>
+                    <input type="checkbox" name="wig" value="armfloats"><br>
+                    <label class="box" for="wig">+35%</label>
+                    <label class="box" for="wig">200 kr</label>                    
+                </div>
+                <input class="box2" type="button" name="sub" value="Proceed to checkout" id="submitTickets" />
+            </form>
+        </section>
+        <section id="right">
+            <div id="sums">
+                <div class="pS">
+                    <h6>Probability for survival</h6>
+                    <div id="probability" class="big">11%</div>
+                </div>
+                <div class="cost">
+                    <h6>Fare</h6>
+                    <div>
+                        <div id="currency">NOK</div>
+                        <div id="actualCost" class="big">522</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

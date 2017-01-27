@@ -23,8 +23,12 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
+@font-face { font-family: Gabriola; src: url('gabriola.ttf'); } 
+
 body {
 	line-height: 1;
+    font-family: Gabriola;
 }
 ol, ul {
 	list-style: none;
@@ -49,6 +53,7 @@ div#wrapper{
     margin-left: auto;
     margin-right: auto;
     margin-top: 200px;
+    position: relative;
 }
 
 section#menu{
@@ -56,7 +61,14 @@ section#menu{
 }
 
 section#main{
-    width: 80%;
+    width: 60%;
+}
+
+section#right{
+    width: 20%;
+    position: absolute;
+    bottom: 0px; 
+    right: 0px;
 }
 
 .box{
@@ -68,9 +80,49 @@ section#main{
     display: block;
     line-height: 33px;
     text-align: center;
+    
 }
 
 div.row {
     display: flex;
     flex-direction: row;
+}
+
+#actualCost{
+    display: block;
+    font-size: 50px;
+}
+
+section#right{
+    text-align: center;
+    
+}
+
+section#right h6{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-bottom: 1px solid #fff;
+    padding: 20px;
+}
+
+section#right div.big{
+    font-size: 80px;
+    font-weight: bold;
+    padding: 20px 10px;
+}
+
+#currency{
+    padding-top: 10px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+div.pS{
+    background-color: #ccc;
+    margin-bottom: 5px;
+}
+
+div.cost{
+    background-color: #ccc;
 }

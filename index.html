@@ -8,7 +8,6 @@
     <script type="text/javascript" src="titanic.js"></script>
 
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <link rel="stylesheet" media="screen" href="bower_components/handsontable/dist/handsontable.full.css">
 </head>
 
 <body>
@@ -22,8 +21,8 @@
         <section id="main">
             <form id="bestill">
                 <div class="row">
-                    <label class="box" for="avreisested">Origin</label>
-                    <select class="box" id="avreisested" name="avreisested">
+                    <label class="box" for="origin">Origin</label>
+                    <select class="box" id="origin" name="origin">
                         <option value="Southampton">Southampton</option>
                         <option value="Calais">Calais</option>
                         <option value="Queenstown">Queenstown</option>
@@ -47,7 +46,7 @@
                 
                 <div class="row">
 
-                    <label class="box" for="voksne">Age</label>
+                    <label class="box" for="age">Age</label>
                     <select class="box" name="age" id="age">
                         <option value=""></option>
                         <option value="0">0</option>
@@ -176,7 +175,7 @@
 
                 <div class="row">
                     <label class="box" for="tClass">Ticket class</label>
-                    <select class="box" id="bklasse" name="bklasse">
+                    <select class="box" id="tClass" name="tClass">
                         <option value="1">First</option>
                         <option value="2">Second</option>
                         <option value="3">Third</option>
@@ -184,6 +183,20 @@
                 </div>
                 <input class="box" type="button" name="sub" value="Get price" id="submitTickets" />
             </form>
+        </section>
+        <section id="right">
+            <div id="sums">
+                <div class="pS">
+                    <h6>Probability for survival</h6>
+                    <div id="probability" class="big">11%</div>
+                </div>
+                <div class="cost">
+                    <h6>Fare</h6>
+                    <div>
+                        <div id="currency">NOK</div>
+                        <div id="actualCost" class="big">522</div></div>
+                </div>
+            </div>
         </section>
     </div>
 </body>

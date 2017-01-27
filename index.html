@@ -1,9 +1,80 @@
-﻿<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <title>Her kommer BOUVET SUrvival cruises</title>
-</head>
-<body>
-    <b>Make survival cruises GREAT AGAIN</b>
-</body>
-</html>
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Opplev Atlanteren vinterstid - Book n&aring;</title>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="titanic.js"></script>
+		
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<link rel="stylesheet" media="screen" href="bower_components/handsontable/dist/handsontable.full.css">
+	</head>
+
+	<body>
+		<section id="menu">
+            <ul>
+                <li>Opplevelser</li>
+                <li>Bestill billett</li>
+            </ul>
+        </section>
+        <section id="main">
+            <form id="bestill">
+                <label for="avreisested">Avreisested</label> 
+                <select id="avreisested" name="avreisested">
+                    <option value="Southampton">Southampton</option>
+                    <option value="Calais">Calais</option>
+                    <option value="Queenstown">Queenstown</option>
+                </select>
+
+
+                <label for="tClass">Billettklasse</label> 
+                <select id="bklasse" name="bklasse">
+                    <option value="1">F&oslash;rste</option>
+                    <option value="2">Andreklasse</option>
+                    <option value="3">Tredjeklasse</option>
+                </select>
+
+                <label>Antall reisende</label>
+                <label for="voksne">Voksne</label> 
+                <select name="inp_voksne" id="inp_voksne">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option selected="selected" value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+
+                <label for="barn">Barn</label> 
+                <select name="inp_barn" id="inp_barn">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option selected="selected" value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+                
+                <div id="voksneInputs">
+
+                </div>
+
+                <div id="barnInputs">
+
+                </div>
+
+                <input type="button" name="sub" value="Get price" id="submitTickets" />
+            </form>
+        </section>
+	</body>
+</html>		

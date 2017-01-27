@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Opplev Atlanteren vinterstid - Book n&aring;</title>
+    <title>Experience the Atlantic at winter time - Book now</title>
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/jquery-ui.min.js"></script>
     <script type="text/javascript" src="titanic.js"></script>
@@ -14,15 +14,15 @@
     <div id="wrapper">
         <section id="menu">
             <ul>
-                <li>Opplevelser</li>
-                <li>Bestill billett</li>
+                <li>Experiences</li>
+                <li>Book ticket</li>
             </ul>
         </section>
         <section id="main">
             <form id="bestill">
                 <div class="row">
                     <label class="box" for="origin">Origin</label>
-                    <select class="box" id="origin" name="origin">
+                    <select class="editable" id="origin" name="origin">
                         <option value="Southampton">Southampton</option>
                         <option value="Calais">Calais</option>
                         <option value="Queenstown">Queenstown</option>
@@ -32,7 +32,7 @@
                 </div>
                 <div class="row">
                     <label class="box" for="destination">Destination</label>
-                    <select class="box" id="destination">
+                    <select class="noneditable" id="destination">
                         <option value="New York">New York(?)</option>
                     </select>
 
@@ -41,13 +41,13 @@
                 <div class="row">
                     <label class="box" for="sex">Sex</label>
 
-                    <select class="box" id="sex" name="sex"><option value="Male">Male</option><option value="Female">Female</option></select>
+                    <select class="editable" id="sex" name="sex"><option value="Male">Male</option><option value="Female">Female</option></select>
                 </div>
                 
                 <div class="row">
 
                     <label class="box" for="age">Age</label>
-                    <select class="box" name="age" id="age">
+                    <select class="editable" name="age" id="age">
                         <option value=""></option>
                         <option value="0">0</option>
                         <option value="1">1</option>
@@ -175,7 +175,7 @@
 
                 <div class="row">
                     <label class="box" for="tClass">Ticket class</label>
-                    <select class="box" id="tClass" name="tClass">
+                    <select class="editable" id="tClass" name="tClass">
                         <option value="1">First</option>
                         <option value="2">Second</option>
                         <option value="3">Third</option>

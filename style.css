@@ -66,9 +66,7 @@ section#main{
 
 section#right{
     width: 20%;
-    position: absolute;
-    bottom: 0px; 
-    right: 0px;
+    
 }
 
 .box{
@@ -125,4 +123,17 @@ div.pS{
 
 div.cost{
     background-color: #ccc;
+}
+
+.boxgrey{
+    background-color: #ccc;
+}
+
+#tilleggsPakker{
+    font-size: 40px; 
+    background-color: #ffd700;
+    padding: 10px 20px;
+    text-align: center;
+    margin-bottom: 5px;
+    cursor: pointer;
 }

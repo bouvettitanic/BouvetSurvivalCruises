@@ -21,34 +21,32 @@
         <section id="main">
             <form id="bestill">
                 <div class="row">
-                    <label class="box" for="origin">Origin</label>
+                    <label class="box boxgrey" for="origin">Origin</label>
                     <select class="box" id="origin" name="origin">
-                        <option value="Southampton">Southampton</option>
-                        <option value="Calais">Calais</option>
-                        <option value="Queenstown">Queenstown</option>
+                        <option value="S">Southampton</option>
+                        <option value="C">Calais</option>
+                        <option value="Q">Queenstown</option>
                     </select>
                 
-                    <span class="box">10. April 1912</span>
+                    <span class="box boxgrey">10. April 1912</span>
                 </div>
                 <div class="row">
-                    <label class="box" for="destination">Destination</label>
+                    <label class="box boxgrey" for="destination">Destination</label>
                     <select class="box" id="destination">
                         <option value="New York">New York(?)</option>
                     </select>
 
-                    <span class="box">15. April 1912</span>
+                    <span class="box boxgrey">15. April 1912</span>
                 </div>
                 <div class="row">
-                    <label class="box" for="sex">Sex</label>
+                    <label class="box boxgrey" for="sex">Sex</label>
 
-                    <select class="box" id="sex" name="sex"><option value="Male">Male</option><option value="Female">Female</option></select>
+                    <select class="box" id="sex" name="sex"><option value="male">Male</option><option value="female">Female</option></select>
                 </div>
                 
                 <div class="row">
-
-                    <label class="box" for="age">Age</label>
+                    <label class="box boxgrey" for="age">Age</label>
                     <select class="box" name="age" id="age">
-                        <option value=""></option>
                         <option value="0">0</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
@@ -72,7 +70,7 @@
                         <option value="20">20</option>
                         <option value="21">21</option>
                         <option value="22">22</option>
-                        <option value="23">23</option>
+                        <option selected="selected" value="23">23</option>
                         <option value="24">24</option>
                         <option value="25">25</option>
                         <option value="26">26</option>
@@ -174,7 +172,7 @@
                 </div>
 
                 <div class="row">
-                    <label class="box" for="tClass">Ticket class</label>
+                    <label class="box boxgrey" for="tClass">Ticket class</label>
                     <select class="box" id="tClass" name="tClass">
                         <option value="1">First</option>
                         <option value="2">Second</option>
@@ -183,9 +181,16 @@
                 </div>
                 <input class="box" type="button" name="sub" value="Get price" id="submitTickets" />
             </form>
+
+            <form id="tillegg">
+                
+            </form>
         </section>
         <section id="right">
             <div id="sums">
+                <div id="tilleggsPakker">
+                     Want to live...?
+                </div>
                 <div class="pS">
                     <h6>Probability for survival</h6>
                     <div id="probability" class="big">11%</div>
@@ -194,7 +199,8 @@
                     <h6>Fare</h6>
                     <div>
                         <div id="currency">NOK</div>
-                        <div id="actualCost" class="big">522</div></div>
+                        <div id="actualCost" class="big">522</div>
+                    </div>
                 </div>
             </div>
         </section>

@@ -1,0 +1,10 @@
+[{"id": "swim", "desc": "Swimming Lessons", "boost": "5", "cost": "500"},
+{"id": "lifeboat", "desc": "Private lifeboat", "boost": "80", "cost": "2000"},
+{"id": "wetsuit", "desc": "Wetsuit", "boost": "15", "cost": "250"},
+{"id": "scuba", "desc": "Scuba gear", "boost": "15", "cost": "800"},
+{"id": "survival", "desc": "Survival Suit", "boost": "15", "cost": "500"},
+{"id": "floats", "desc": "Arm Floats", "boost": "10", "cost": "50"},
+{"id": "buoy", "desc": "Lifebuoy", "boost": "5", "cost": "150"},
+{"id": "pregnant", "desc": "Pregnant disguise", "boost": "15", "cost": "500"},
+{"id": "sexchange", "desc": "Sex change kit", "boost": "55", "cost": "500"},
+{"id": "wig", "desc": "Wig / disguise", "boost": "35", "cost": "200"}]

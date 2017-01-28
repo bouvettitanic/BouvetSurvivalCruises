@@ -45,10 +45,10 @@ function updateProb(){
 
     $.ajax({
      url:rq,
-     dataType: 'jsonp', 
+     dataType: 'json', 
      success:function(json){
         console.log(json);
-        //setProb(data);
+        setProb(json);
      },
      error:function(){
          console.log("bleh");
@@ -76,6 +76,9 @@ function tilleggCheck(t){
 
                 console.log(data[i].boost + " --- " + prob );
 
+                if (prob > 100) {
+                    prob = 100;
+                }
                 $("#probability").empty().append(prob.toFixed(2) + "%");
             }
         }
@@ -87,7 +90,7 @@ function getProb(){
 }
 
 function setProb(p){
-    $("#probability").empty().append(p + "%");
+    $("#probability").empty().append(p.probabilityForGruesomeAndAwefulDeath*100 + "%");
 }
 
 

@@ -15,6 +15,13 @@
 </head>
 
 <body>
+    <div id="video">
+        <div id="blend"></div>
+        <video width="110%" height="110%" poster="__POSTER__.jpg" autoplay="true">
+            <source src="titianic_bg2.mp4" type="video/mp4" /> 
+        </video>
+    </div>
+    
     <div id="busy_back">
     </div>
     <div id="thinking">
@@ -26,11 +33,7 @@
     </div>
     <img id="head" src="images/Header.jpg" alt="" />
 
-    <div id="video">
-        <div id="blend"></div>
-        <video width="110%" height="110%" poster="__POSTER__.jpg" autoplay="true">
-            <source src="titianic_bg2.mp4" type="video/mp4" /> 
-        </video>
+    
 
     <div id="wrapper">
         <section id="menu">
@@ -214,6 +217,7 @@
                     </select>
                 </div>
                 <input class="box" type="button" name="sub" value="Get price" id="submitTickets" />
+                
             </form>
 
             <form id="tillegg">
@@ -222,6 +226,9 @@
         </section>
         <section id="right">
             <div id="sums">
+                <div id="bookingUrl">
+                    <a href="index.html" id="buy">Book tickets now!</a>
+                </div>
                 <div id="tilleggsPakker">
                      Want to live...?
                 </div>

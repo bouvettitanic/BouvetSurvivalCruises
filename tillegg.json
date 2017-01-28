@@ -7,4 +7,5 @@
 {"id": "buoy", "desc": "Lifebuoy", "boost": "5", "cost": "150"},
 {"id": "pregnant", "desc": "Pregnant disguise", "boost": "15", "cost": "500"},
 {"id": "sexchange", "desc": "Sex change kit", "boost": "55", "cost": "500"},
-{"id": "wig", "desc": "Wig / disguise", "boost": "35", "cost": "200"}]
+{"id": "wig", "desc": "Wig / disguise", "boost": "35", "cost": "200"},
+{"id": "golden", "desc": "Golden ticket", "boost": "1000", "cost":  "2500"}]

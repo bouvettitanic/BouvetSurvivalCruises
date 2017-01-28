@@ -7,10 +7,13 @@ $.ajaxSetup({
 var tilleggVisible = false;
 
 $(document).ready(function(){
+    updateProb();
 
     // What to do when clicking buy ticket...
     $("#submitTickets").click(function (data){
        console.log("prob changed");
+       think();
+       setTimeout(unThink, 5000);
        updateProb();
     });
 
@@ -30,8 +33,18 @@ $(document).ready(function(){
     });
 });
 
+function think(){
+    $("#busy_back").fadeIn();   
+    $("#thinking").fadeIn();  
+    showTitanim();
+}
+
+function unThink(){
+    $("#busy_back").fadeOut();
+    $("#thinking").fadeOut();  
+}
+
 function updateProb(){
-   
     var rq = "http://bouvettitanicapi.azurewebsites.net/api/sant?";
     
     var bookingObj = {}
@@ -54,6 +67,23 @@ function updateProb(){
          console.log("bleh");
      }      
     });
+
+    getTicketPrice();
+}
+
+function getTicketPrice(){
+    var prices = {1: 999, 2: 499, 3: 99}
+    
+    var prob = getProb();
+
+    var randomFactor = (Math.floor(Math.random() * (115 - 85)) + 85)/100;    
+
+    var basePrice = $("#tClass").val();
+
+    var price = (prices[basePrice] * (prob/100) ) * randomFactor;
+    console.log("Price: " + basePrice + " --> " + prob);
+
+    $("#actualCost").empty().append(price.toFixed(2));
 }
 
 function tilleggCheck(t){
@@ -86,15 +116,25 @@ function tilleggCheck(t){
 }
 
 function getProb(){
-    return $("#probability").val().substring(0, $("#probability").length-1);
+    return $("#probability").text().substring(0, 5);
 }
 
 function setProb(p){
-    $("#probability").empty().append(p.probabilityForGruesomeAndAwefulDeath*100 + "%");
+    $("#probability").empty().append((p.probabilityForGruesomeAndAwefulDeath*100).toFixed(2) + "%");
 }
 
 
 function getTillegg(){
+    think();
+    setTimeout(showTillegg, 2000);
+}
+
+function showTitanim(){
+    $("#titanim").attr("src", "titanic.gif");
+}
+
+function showTillegg(){
+    $("form#tillegg").show();
     $.getJSON("tillegg.json", function(data){
         for (var i=0; i<data.length; i++){
             
@@ -108,9 +148,7 @@ function getTillegg(){
         } 
 
         $("form#bestill").hide();
-        $("form#tillegg").show();
-        
     });
 
-
+    unThink();
 }

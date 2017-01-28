@@ -166,7 +166,7 @@ section#right h6{
 }
 
 section#right div.big{
-    font-size: 80px;
+    font-size: 70px;
     font-weight: bold;
     padding: 20px 10px;
 }
@@ -208,7 +208,52 @@ div.cost{
 }
 
 #blend{
-    z-index: 200;
-    opacity: 0.2;
-    background-color: #ccc;
+    z-index: 9000;
+    opacity: 0.9;
+    background-color: #fff;
+}
+
+#thinking{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    width: 500px;
+    height: 300px;
+    margin-left: -200px;
+    display:none;
+    z-index: 10000;
+    background-color: #fff;
+    border-radius: 20px;
+    border: 5px solid #ffd700;
+}
+
+#busy_back{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.8;
+    background-color: #fff;
+    display: none;
+    z-index: 10000;
+}
+
+#thinking {
+    text-align: center;
+}
+
+#thinking img{
+    text-align: center;
+    margin-top: 20px;
+}
+
+#thinking h1{
+    font-size: 200%;
+    text-align: center;
+    margin-top: 60px;
+}
+
+#thinking h2{
+    font-size: 150%;
+    text-align: center;
+    margin-top: 20px;
 }

@@ -5,24 +5,50 @@
     <title>Experience the Atlantic at winter time - Book now</title>
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script src="js/lightbox.js"></script>
+
     <script type="text/javascript" src="titanic.js"></script>
 
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <link href="css/lightbox.css" rel="stylesheet">
+
 </head>
 
 <body>
+    <div id="busy_back">
+    </div>
+    <div id="thinking">
+        <h1>Please wait</h1>
+    
+        <img id="titanim" src="" width="18%" alt=""/>
+        
+        <h2>We're making Titanic great again</h2>
+    </div>
+
     <div id="video">
         <div id="blend"></div>
-        <video width="100%" height="100%" poster="__POSTER__.jpg" autoplay="true">
+        <video width="110%" height="110%" poster="__POSTER__.jpg" autoplay="true">
             <source src="titianic_bg2.mp4" type="video/mp4" /> 
         </video>
 
     <div id="wrapper">
         <section id="menu">
-            <ul>
-                <li>Experiences</li>
-                <li>Book ticket</li>
-            </ul>
+            <a href="images/Titanic-Poster1.jpg" data-lightbox="posters">
+                <img src="images/Titanic-Poster1.jpg" alt="" width="180px" />
+            </a>
+
+            <a href="images/Titanic-Poster2.jpg" data-lightbox="posters">
+                <img src="images/Titanic-Poster2.jpg" alt="" width="180px" />
+            </a>
+
+            <a href="images/Titanic-Poster3.jpg" data-lightbox="posters">
+                <img src="images/Titanic-Poster3.jpg" alt="" width="180px" />
+            </a>
+
+            <a href="images/Titanic-Poster4.jpg" data-lightbox="posters">
+                <img src="images/Titanic-Poster4.jpg" alt="" width="180px" />
+            </a>
+
         </section>
         <section id="main">
             <form id="bestill">
@@ -200,13 +226,13 @@
                 </div>
                 <div class="pS">
                     <h6>Probability for survival</h6>
-                    <div id="probability" class="big">11%</div>
+                    <div id="probability" class="big">1%</div>
                 </div>
                 <div class="cost">
                     <h6>Fare</h6>
                     <div>
-                        <div id="currency">NOK</div>
-                        <div id="actualCost" class="big">522</div>
+                        <div id="currency">GBP</div>
+                        <div id="actualCost" class="big">1</div>
                     </div>
                 </div>
             </div>

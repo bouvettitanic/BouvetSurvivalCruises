@@ -19,20 +19,24 @@ $(document).ready(function(){
     $("#tilleggsPakker").click(function(){
         if (!tilleggVisible){
             getTillegg();
+            tilleggVisible = true;
         }
     });
 
     $("form#tillegg").on("click", "div.tillegg input", function(){
+        $(this).attr("disabled", "disabled");
+        console.log(this);
         tilleggCheck(this);
     });
 });
 
 function updateProb(){
-    var rq = "http://bouvettitanicapi.azurewebsites.net/api/Sannsynlighets";
+   
+    var rq = "http://bouvettitanicapi.azurewebsites.net/api/sant?";
     
     var bookingObj = {}
 
-    rq += "?klasse=" + $("#tClass").val();
+    rq += "klasse=" + $("#tClass").val();
     rq += "&alder=" + $("#age").val();
     rq += "&kjoenn=" + $("#sex").val();
     rq += "&avreisested=" + $("#origin").val();
@@ -43,8 +47,8 @@ function updateProb(){
      url:rq,
      dataType: 'jsonp', 
      success:function(json){
-        console.log(data);
-        setProb(data);
+        console.log(json);
+        //setProb(data);
      },
      error:function(){
          console.log("bleh");

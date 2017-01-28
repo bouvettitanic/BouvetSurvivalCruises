@@ -164,6 +164,7 @@ div.row {
 #actualCost{
     display: block;
     font-size: 50px;
+    margin-bottom;
 }
 
 section#right{
@@ -200,6 +201,7 @@ div.pS{
 div.cost{
     background-color: #ccc;
     border: 5px solid #ffd700;
+    margin-bottom: 5px;
 }
 
 .boxgrey{
@@ -287,4 +289,15 @@ div.cost{
     font-size: 150%;
     text-align: center;
     margin-top: 20px;
+}
+
+#fb{
+    padding: 10px;
+    background-color: #ccc;
+    text-align: center;
+    
+}
+
+#fb a {
+    vertical-align: middle;
 }

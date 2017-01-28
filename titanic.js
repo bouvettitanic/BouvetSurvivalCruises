@@ -148,6 +148,8 @@ function showTillegg(){
         } 
 
         $("form#bestill").hide();
+
+        $("form#tillegg").append('<div id="orderTickets>Order tickets</div>')
     });
 
     unThink();

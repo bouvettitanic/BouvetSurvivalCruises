@@ -36,7 +36,7 @@ $(document).ready(function(){
         $("form#tillegg").fadeOut(function(){
             var c = $("#tClass").val();
             
-            $("#showTickets").append('<img width="600px" src="images/c' + c + '.jpg" alt="" />');
+            $("#showTickets").append('<img width="580px" src="images/c' + c + '.jpg" alt="" />');
 
             $("#showTickets").fadeIn();
         });

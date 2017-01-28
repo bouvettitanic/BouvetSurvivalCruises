@@ -194,10 +194,12 @@ section#right div.big{
 div.pS{
     background-color: #ccc;
     margin-bottom: 5px;
+    border: 5px solid #ffd700;
 }
 
 div.cost{
     background-color: #ccc;
+    border: 5px solid #ffd700;
 }
 
 .boxgrey{

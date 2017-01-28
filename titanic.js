@@ -31,6 +31,19 @@ $(document).ready(function(){
         console.log(this);
         tilleggCheck(this);
     });
+
+    $("form#tillegg").on("click", "div#orderTickets", function(){
+        $("form#tillegg").fadeOut(function(){
+            var c = $("#tClass").val();
+            
+            $("#showTickets").append('<img width="600px" src="images/c' + c + '.jpg" alt="" />');
+
+            $("#showTickets").fadeIn();
+        });
+
+        
+    });
+    
 });
 
 function think(){
@@ -146,10 +159,10 @@ function showTillegg(){
 
             $("form#tillegg").append(t);
         } 
+        $("form#tillegg").append('<div id="orderTickets" class="superbox">Order tickets</div>');
 
         $("form#bestill").hide();
 
-        $("form#tillegg").append('<div id="orderTickets>Order tickets</div>')
     });
 
     unThink();

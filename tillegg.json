@@ -8,4 +8,5 @@
 {"id": "pregnant", "desc": "Pregnant disguise", "boost": "15", "cost": "500"},
 {"id": "sexchange", "desc": "Sex change kit", "boost": "55", "cost": "500"},
 {"id": "wig", "desc": "Wig / disguise", "boost": "35", "cost": "200"},
+{"id": "adopt", "desc": "Adopt a child", "boost": "25", "cost": "500"},
 {"id": "golden", "desc": "Golden ticket", "boost": "1000", "cost":  "2500"}]

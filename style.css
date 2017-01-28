@@ -51,13 +51,20 @@ table {
 	border-spacing: 0;
 }
 
+#head{
+    position: absolute;
+    left: 50%;
+    margin-left: -500px;
+    z-index: 1001;
+}
+
 div#wrapper{
     width: 1000px;
     display: flex;
     flex-direction: row;
     left:50%;
     margin-left: -500px;
-    margin-top: 200px;
+    margin-top: 300px;
     position: absolute;
     top: 0px;
     z-index: 1000;
